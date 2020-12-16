@@ -1,6 +1,5 @@
 # Qemulator
-Remake of [old version](https://github.com/Pixelsuft/Qemulator-old) <br />
-![Screenshot](https://github.com/Pixelsuft/Qemulator/blob/main/screenshots/screenshot1.png?raw=true)
+Remake of [old version](https://github.com/Pixelsuft/Qemulator-old)
 # Requirements
 Internet Explorer >= 10
 # Install Python Libs
@@ -24,3 +23,6 @@ cd server
 move server.exe Qemulator.exe
 explorer .
 ```
+# Screenshots
+![Screenshot](https://github.com/Pixelsuft/Qemulator/blob/main/screenshots/screenshot1.png?raw=true)<br />
+![Screenshot](https://github.com/Pixelsuft/Qemulator/blob/main/screenshots/screenshot2.png?raw=true)
