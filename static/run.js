@@ -37,6 +37,7 @@ var in_boot_select=false;
 var after=false;
 
 function boot(order){
+	after=true;
   location.href="http://localhost:5000/start_up/"+order;
 }
 
@@ -61,7 +62,6 @@ window.addEventListener("keydown", function(e){
     else if(e.key=="1" || e.code=="Digit1")boot('c');
     else if(e.key=="с" || e.key=="c" || e.code=="KeyC")boot('d');
     else if(e.key=="т" || e.key=="n" || e.code=="KeyN")boot('n');
-    after=true;
   }
 }, false);
 setTimeout(function(){
