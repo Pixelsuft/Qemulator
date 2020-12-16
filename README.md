@@ -11,6 +11,7 @@ pip install easygui
 pip install pyinstaller
 ```
 # Build For Windows
+Edit 1-st string of file ```server.py```: is_builded=True 
 ```
 pyinstaller server.py -w -i icon.ico --add-data "src;src" --add-data "static;static"
 copy Qemulator.exe dist\server\Client.exe
