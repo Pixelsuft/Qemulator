@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Qemulator</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='drives.css') }}">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body id="root">
+<input id="fda" value="{{ fda }}" class="text" placeholder="Floppy A" disabled><input type="button" class="btn" id="fda_btn" value="Floppy A">
+<input id="fdb" value="{{ fdb }}" class="text" placeholder="Floppy B" disabled><input type="button" class="btn" id="fdb_btn" value="Floppy B">
+<input id="hda" value="{{ hda }}" class="text" placeholder="Hard Disk 1" disabled><input type="button" class="btn" id="hda_btn" value="Hard Disk 1">
+<input id="hdb" value="{{ hdb }}" class="text" placeholder="Hard Disk 2" disabled><input type="button" class="btn" id="hdb_btn" value="Hard Disk 2">
+<input id="hdc" value="{{ hdc }}" class="text" placeholder="Hard Disk 3" disabled><input type="button" class="btn" id="hdc_btn" value="Hard Disk 3">
+<input id="hdd" value="{{ hdd }}" class="text" placeholder="Hard Disk 4" disabled><input type="button" class="btn" id="hdd_btn" value="Hard Disk 4">
+<input id="cd" value="{{ cd }}" class="text" placeholder="CDROM" disabled><input type="button" class="btn" id="cd_btn" value="CDROM">
+<div id="un1">Boot Order:</div>
+<select class="selector" id="order">
+  <option value="dca">CDROM/Hard Disk/Floppy</option>
+  <option value="dac">CDROM/Floppy/Hard Disk</option>
+  <option value="cda">Hard Disk/CDROM/CDROM</option>
+  <option value="cad">Hard Disk/Floppy/Floppy</option>
+  <option value="acd">Floppy/Hard Disk/CDROM</option>
+  <option value="adc">Floppy/CDROM/Hard Disk</option>
+</selector>
+<input type="button" class="btn" id="exit" value="Exit">
+<script language="JavaScript" type="text/javascript">
+document.getElementById('order').value="{{ order }}";
+</script>
+<script language="JavaScript" type="text/javascript" src="{{ url_for('static', filename='drives.js') }}"></script>
+</body>
+</html>

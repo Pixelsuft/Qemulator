@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Qemulator</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" type="image/ico" href="../static/favicon.ico">
+<style rel="stylesheet" type="text/css">
+body{
+	margin: 0px;
+	font-family: Segoe UI;
+	font-size: 22;
+	overflow: hidden;
+	cursor: default;
+}
+a{
+  color: blue;
+  cursor: default;
+  text-decoration: none;
+	transition: 0.5s all;
+}
+a:hover{
+	color: red;
+	transition: 0.5s all;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body id="root">
+<div id="nblock">
+<div id="linker">Error 404!</div><br>
+<a href="http://localhost:5000/spisok">Home page</a>
+</div>
+<script language="JavaScript" type="text/javascript">
+function makeUnselectable(node) {
+    if (node.nodeType == 1) {
+        node.setAttribute("unselectable", "on");
+    }
+    var child = node.firstChild;
+    while (child) {
+        makeUnselectable(child);
+        child = child.nextSibling;
+    }
+}
+makeUnselectable(document.getElementById("nblock"));
+
+
+function clickIE() {
+    if (document.all) {
+        return false;
+    }
+}
+function clickAll(e) {
+    if (document.layers || (document.getElementById && !document.all)) {
+        if (e.which == 2 || e.which == 3) {
+            return false;
+        }
+    }
+}
+if (document.layers) {
+    document.captureEvents(Event.MOUSEDOWN);
+    document.onmousedown = clickAll;
+} else {
+    document.onmouseup = clickAll;
+    document.oncontextmenu = clickIE;
+}
+
+document.oncontextmenu = new Function("return false");
+document.getElementById('linker').textContent="Error 404! ("+location.href+")";
+</script>
+</body>
+</html>

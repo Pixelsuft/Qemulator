@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Qemulator</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='run.css') }}">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body id="root">
+  <div id="info_start" style="display: block;">
+    Press F12 for boot menu.
+    Starting in <timer>4</timer>
+  </div>
+  <div id="bootmenu" style="display: none;">
+    <div id="a">A) Floppy A</div>
+    <div id="b">B) Floppy B</div>
+    <div id="c">1) Hard Drive</div>
+    <div id="d">C) CDROM</div>
+    <div id="n">N) Network</div>
+  </div>
+<a href="http://localhost:5000/spisok">Exit</a>
+<script language="JavaScript" type="text/javascript" src="{{ url_for('static', filename='run.js') }}"></script>
+</body>
+</html>

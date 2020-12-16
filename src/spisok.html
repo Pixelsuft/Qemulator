@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Qemulator</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='spisok.css') }}">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body id="root">
+<select size="0" id="selector">
+  {% for el in vm_mass %}
+    <option id="start_{{ el }}">{{ el }}</option>
+    <script language="JavaScript" type="text/javascript" id="temp_script">
+      if(document.getElementById('start_{{ el }}').value==''){
+        document.getElementById('start_{{ el }}').remove();
+      }
+      else{
+        document.getElementById('selector').size+=1;
+      }
+      document.getElementById('temp_script').remove();
+    </script>
+  {% endfor %}
+</select>
+<br>
+<input type="text" id="cur_vm"><input type="button" class="btn" id="plus" value="+"><input type="button" class="btn" id="minus" value="-">
+<br>
+<input type="button" class="btn" id="sets" value="Settings">
+<input type="button" class="btn" id="setup_disks" value="Set Up Disks">
+<input type="button" class="btn" id="run" value="Start Emulation">
+<input type="button" class="btn" id="exit" value="Exit">
+<script language="JavaScript" type="text/javascript" src="{{ url_for('static', filename='spisok.js') }}"></script>
+</body>
+</html>

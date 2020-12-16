@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>Qemulator</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='sets.css') }}">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body id="root">
+<form method="get" action="http://localhost:5000/save_sets/{{ vm }}/dont_del_this_needs_fix">
+<table>
+  <tr id="main_td">
+    <td id="display"><center>Display</center></td>
+    <td id="system"><center>System</center></td>
+    <td id="devices"><center>Devices</center></td>
+    <td id="sound_vga"><center>Sound/Video</center></td>
+    <td id="other"><center>Other</center></td>
+  </tr>
+  <tr>
+    <td><label id="disel1"><input type="checkbox" id="sdl" name="sdl">Use SDL</label></td>
+    <td><label id="disel4"><input type="radio" name="arc" id="arc32" value="x86">x86</label></td>
+    <td><label id="disel21"><input type="checkbox" id="tablet" name="tablet">USB Tablet</label></td>
+    <td><label id="disel8"><div class="small"><input type="checkbox" id="sb16" name="sb16">Sound Blaster 16</div></label></td>
+    <td><label id="disel15"><input type="checkbox" id="nodefaults" name="nodefaults">No Defaults</label></td>
+  </tr>
+  <tr>
+    <td><label id="disel2"><input type="checkbox" id="vnc" name="vnc">Use VNC</label></td>
+    <td><label id="disel5"><input type="radio" name="arc" id="arc64" value="x64">x64</label></td>
+    <td><label id="disel22"><input type="checkbox" id="vmport" name="vmport">VMware Port</label></td>
+    <td><label id="disel9"><input type="checkbox" id="speaker" name="speaker">PC Speaker</label></td>
+    <td><label id="disel20"><input type="checkbox" id="ctrl_grab" name="ctrl_grab">Ctrl Grab</label></td>
+  </tr>
+  <tr>
+    <td><input type="text" id="vnc_ip" class="text" name="vnc_ip" placeholder="VNC IP Address"></td>
+    <td>
+      <select class="selector" size="1" id="cpu" name="cpu">
+        <option value="def" disabled selected>CPU</option>
+        <option value="qemu32">qemu32</option>
+        <option value="qemu64">qemu64</option>
+        <option value="pentium">pentium</option>
+        <option value="pentium3">pentium3</option>
+        <option value="phenom">phenom</option>
+        <option value="athlon">athlon</option>
+        <option value="486">486</option>
+        <option value="core2duo">core 2 duo</option>
+     </select>
+    </td>
+    <td><label id="disel23"><input type="checkbox" id="hpet" name="hpet">HPET</label></td>
+    <td><label id="disel10"><input type="checkbox" id="ac97" name="ac97">Intel AC97</label></td>
+    <td><label id="disel26"><input type="checkbox" id="noquit" name="noquit">No Quit</label></td>
+  </tr>
+  <tr>
+    <td><label id="disel3"><div class="small"><input type="checkbox" id="nographic" name="nographic">Text screen to cmd</div></label></td>
+    <td><input type="number" id="memsize" class="text" name="memsize" placeholder="Memory (MB)"></td>
+    <td><label id="disel24"><input type="checkbox" id="acpi" name="acpi">ACPI</label></td>
+    <td><label id="disel11"><div class="small"><input type="checkbox" id="ihda" name="ihda">Intel HD Audio</div></label></td>
+    <td><label id="disel27"><input type="checkbox" id="2k" name="2k">Win 2000 Hack</label></td>
+  </tr>
+  <tr>
+    <td><label id="disel6"><input type="checkbox" id="stdio" name="stdio">Console Monitor</label></td>
+    <td><label id="disel30"><input type="checkbox" id="tcg" name="tcg">Accel TCG</label></td>
+    <td></td>
+    <td><label id="disel13"><div class="small"><input type="checkbox" id="adlib" name="adlib">Yamaha YM3812</div></label></td>
+    <td><label id="disel28"><input type="checkbox" id="noac" name="noac">No Accel</label></td>
+  </tr>
+  <tr>
+    <td><label id="disel7"><input type="checkbox" id="vc" name="vc">Display Monitor</label></td>
+    <td><label id="disel31"><input type="checkbox" id="hax" name="hax">Accel HAXM</label></td>
+    <td></td>
+    <td><label id="disel14"><div class="small"><input type="checkbox" id="gus" name="gus">Gravis Ultrasound</div></td>
+    <td><label id="disel29">Other Params: </label></td>
+  </tr>
+  <tr>
+    <td><label id="disel12"><input type="checkbox" id="console_on" name="console_on">With Console</label></td>
+    <td><label id="disel32"><input type="checkbox" id="whpx" name="whpx">Accel WHPX</label></td>
+    <td></td>
+    <td><label id="disel16"><input type="radio" name="vga" id="vmware_svga" value="vmware_svga">VMware SVGA</label></td>
+    <td><input type="text" id="other_params" class="text" name="other_params" placeholder="Other Params"></td>
+  </tr>
+  <tr>
+    <td><label id="disel25"><input type="checkbox" id="fullscreen" name="fullscreen">Full Screen</label></td>
+    <td><label id="disel33"><input type="checkbox" id="kvm" name="kvm">Accel KVM</label></td>
+    <td></td>
+    <td><label id="disel17"><input type="radio" name="vga" id="std_vga" value="std_vga">Std VGA</label></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>
+      <select class="selector" size="1" id="bios" name="bios">
+        <option value="def" disabled selected>BIOS</option>
+        <option value="qemu">Qemu Default</option>
+        <option value="qemu_old">Qemu Old</option>
+        <option value="efi">EFI</option>
+     </select></td>
+    <td></td>
+    <td><label id="disel18"><input type="radio" name="vga" id="cirrus_vga" value="cirrus_vga">Cirrus VGA</label></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><label id="disel19"><input type="radio" name="vga" id="virtio_svga" value="virtio_svga">Virtio SVGA</label></td>
+    <td></td>
+  </tr>
+</table>
+<input type="submit" class="btn" id="sae" value="Save And Exit">
+<input type="button" class="btn" id="ews" value="Exit Without Saving">
+</form>
+<script language="JavaScript" type="text/javascript" src="{{ url_for('static', filename='sets.js') }}">
+//Don't look for params
+//Save link only
+//Use vocablary
+</script>
+<script language="JavaScript" type="text/javascript">
+if("{{ fix_location }}"=="true"){
+//location.href="http://localhost:5000/save_sets/{{ vm }}"+location.href.replace('%20',' ').replace("http://localhost:5000/save_sets/{{ vm }}/dont_del_this_needs_fix?","/");
+location.href="http://localhost:5000/save_sets/{{ vm }}/"+location.search.substr(1);
+}
+</script>
+</body>
+</html>
