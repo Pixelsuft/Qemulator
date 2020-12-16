@@ -8,4 +8,5 @@ pip install flask
 pip install flask_cors
 pip install tkinter
 pip install easygui
+pip install pyinstaller
 ```
