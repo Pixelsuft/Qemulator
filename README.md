@@ -5,6 +5,7 @@ Internet Explorer >= 10 <br />
 (Maybe Windows 10 only)
 # Installation for Windows
 Installing For Windows: 
+
 1)Download [Setup](https://github.com/Pixelsuft/Qemulator/releases/download/v1.0-alpha/Qemulator_Setup.exe) or [Archive](https://github.com/Pixelsuft/Qemulator/releases/download/v1.0-alpha/Qemulator.rar)
 2)Install or unpack it to QEMU dir
 (You also can install/unpack to other dir, if QEMU Folder in PATH)
