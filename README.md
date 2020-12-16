@@ -1,5 +1,6 @@
 # Qemulator
-Remake of [old version](https://github.com/Pixelsuft/Qemulator-old)
+Remake of [old version](https://github.com/Pixelsuft/Qemulator-old) <br />
+![Screenshot](https://github.com/Pixelsuft/Qemulator/blob/main/screenshots/screenshot1.png?raw=true)
 # Requirements
 Internet Explorer >= 10
 # Install Python Libs
