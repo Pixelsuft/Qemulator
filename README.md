@@ -2,6 +2,7 @@
 Remake of [old version](https://github.com/Pixelsuft/Qemulator-old)
 # Requirements
 Internet Explorer >= 10
+(Maybe Windows 10 only)
 # Install Python Libs
 ```
 pip install flask
