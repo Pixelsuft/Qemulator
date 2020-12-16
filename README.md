@@ -11,7 +11,7 @@ pip install easygui
 pip install pyinstaller
 ```
 # Build For Windows
-Edit 1-st string of file ```server.py```: is_builded=True <br />
+Edit first string of file ```server.py```: is_builded=True <br />
 Then: 
 ```
 pyinstaller server.py -w -i icon.ico --add-data "src;src" --add-data "static;static"
