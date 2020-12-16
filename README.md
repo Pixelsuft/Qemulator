@@ -14,7 +14,10 @@ pip install pyinstaller
 ```
 pyinstaller server.py -w -i icon.ico --add-data "src;src" --add-data "static;static"
 copy Qemulator.exe dist\server\Client.exe
+copy *.bin dist\server\*.bin
+copy *.txt dist\server\*.txt
 cd dist
 cd server
 move server.exe Qemulator.exe
+explorer .
 ```
