@@ -10,3 +10,7 @@ pip install tkinter
 pip install easygui
 pip install pyinstaller
 ```
+# Build For Windows
+```
+pyinstaller server.py -w -i icon.ico --add-data "src;src" --add-data "static;static"
+```
