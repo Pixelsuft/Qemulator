@@ -1,0 +1,51 @@
+body{
+	margin: 50px;
+	font-family: Segoe UI;
+	font-size: 14px;
+	cursor: default;
+	overflow: hidden;
+	background: url(boot.png);
+}
+.btn{
+	height:40px;
+	margin: 0px;
+	font-family: Segoe UI;
+	font-size: 18px;
+	border: 1px solid blue;
+	border-radius: 50px;
+	transition: 0.5s all;
+}
+.btn:hover{
+	transition: 0.5s all;
+	background-color: red;
+}
+#bootmenu{
+	font-family: Segoe UI;
+	font-size: 40px;
+	color: white;
+	cursor: default;
+	transition: 0.5s all;
+}
+#a, #b, #c, #d, #n{
+	font-family: Segoe UI;
+	font-size: 40px;
+	color: white;
+	cursor: default;
+	transition: 0.5s all;
+}
+#a:hover, #b:hover, #c:hover, #d:hover, #n:hover{
+	color: red;
+	cursor: default;
+	transform: rotate(-1deg) scale(1.07);
+	transition: 0.5s all;
+}
+#info_start{
+	font-family: Segoe UI;
+	font-size: 40px;
+}
+#info_start:hover{
+	color: red;
+	cursor: default;
+	transform: rotate(-1deg) scale(1.07);
+	transition: 0.5s all;
+}

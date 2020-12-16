@@ -1,0 +1,70 @@
+body{
+	margin: 0px;
+	font-family: Segoe UI;
+	font-size: 14px;
+	cursor: default;
+	overflow: hidden;
+	background: url(boot.png);
+}
+.btn{
+	height:40px;
+	margin: 0px;
+	font-family: Segoe UI;
+	font-size: 18px;
+	border: 1px solid blue;
+	border-radius: 50px;
+	transition: 0.5s all;
+}
+.btn:hover{
+	transition: 0.5s all;
+	background-color: red;
+}
+table{
+	width: 100%;
+	margin: 0px;
+	font-family: Segoe UI;
+	font-size: 18px;
+	transition: 0.5s all;
+	height: 80%;
+}
+#main_td{
+	height:40px;
+	width: 100%;
+}
+#display, #system, #devices, #sound_vga, #other{
+	transition: 0.5s all;
+	width: 160px;
+	margin: 0px;
+	font-family: Segoe UI;
+	font-size: 18px;
+	border: 1px solid blue;
+	border-radius: 50px;
+	cursor: default;
+	background-color: RolyalBlue;
+}
+#display:hover, #system:hover, #devices:hover, #sound_vga:hover, #other:hover{
+	transition: 0.5s all;
+	background-color: red;
+	transform: rotate(-1deg) scale(1.1);
+}
+#sae, #ews{
+	width: 100%;
+	margin: 0px;
+	margin-top: 5px;
+}
+.text{
+	transition: 0.5s all;
+	font-family: Segoe UI;
+	border: 1px solid blue;
+	border-radius: 0px;
+	width: 120px;
+}
+.small{
+	font-size: 14px;
+}
+.selector{
+	transition: 0.5s all;
+	font-family: Segoe UI;
+	border: 1px solid blue;
+	border-radius: 1px;
+}

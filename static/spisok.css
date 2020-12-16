@@ -1,0 +1,48 @@
+body{
+	margin: 5px;
+	font-family: Segoe UI;
+	font-size: 14px;
+	cursor: default;
+	overflow-x: hidden;
+}
+.btn{
+	height:40px;
+	margin: 0px;
+	font-family: Segoe UI;
+	font-size: 18px;
+	border: 1px solid blue;
+	border-radius: 50px;
+	transition: 0.5s all;
+}
+.btn:hover{
+	transition: 0.5s all;
+	background-color: red;
+}
+#selector{
+	overflow: hidden;
+	font-family: Segoe UI;
+	font-size: 18px;
+	border: 1px solid blue;
+	border-radius: 0px;
+	width: 100%;
+}
+#exit, #sets, #run, #setup_disks{
+	width: 100%;
+	margin-top: 5px;
+}
+#cur_vm{
+	overflow: hidden;
+	font-family: Segoe UI;
+	font-size: 18px;
+	border: 1px solid blue;
+	border-radius: 50px;
+	width: 600px;
+	height: 40px;
+	margin-top: 5px;
+}
+#plus, #minus{
+	width: 70px;
+	height: 40px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
