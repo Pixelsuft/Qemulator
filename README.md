@@ -3,6 +3,11 @@ Remake of [old version](https://github.com/Pixelsuft/Qemulator-old)
 # Requirements
 Internet Explorer >= 10 <br />
 (Maybe Windows 10 only)
+# Installation for Windows
+Installing For Windows: 
+1)Download [Setup](https://github.com/Pixelsuft/Qemulator/releases/download/v1.0-alpha/Qemulator_Setup.exe) or [Archive](https://github.com/Pixelsuft/Qemulator/releases/download/v1.0-alpha/Qemulator.rar)
+2)Install or unpack it to QEMU dir
+(You also can install/unpack to other dir, if QEMU Folder in PATH)
 # Install Python Libs
 ```
 pip install flask
@@ -27,3 +32,5 @@ explorer .
 # Screenshots
 ![Screenshot](https://github.com/Pixelsuft/Qemulator/blob/main/screenshots/screenshot1.png?raw=true)<br />
 ![Screenshot](https://github.com/Pixelsuft/Qemulator/blob/main/screenshots/screenshot2.png?raw=true)
+# Bugs
+If you want to don't have bugs, you must have more than 1 virtual machine in list
