@@ -1,7 +1,7 @@
 # Qemulator
 Remake of [old version](https://github.com/Pixelsuft/Qemulator-old)
 # Requirements
-Internet Explorer >= 10
+Internet Explorer >= 10 <br />
 (Maybe Windows 10 only)
 # Install Python Libs
 ```
