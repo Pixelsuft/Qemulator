@@ -33,23 +33,30 @@ if (document.layers) {
 
 document.oncontextmenu = new Function("return false");
 
+var empty_spisok=parseInt(document.getElementById('selector').size)<1;
+
+if(!empty_spisok)document.getElementById('cur_vm').value=document.getElementById('selector').item(0).value;
+if(parseInt(document.getElementById('selector').size)<2)document.getElementById('selector').size="2";
+
 document.getElementById('exit').addEventListener('click', function(){
 	location.href="http://localhost:5000/exit";
 });
-
-document.getElementById('selector').addEventListener('change', function(){
+function fix_f(){
 	document.getElementById('cur_vm').value=document.getElementById('selector').value;
-});
+}
+document.getElementById('selector').addEventListener('change', fix_f);
+document.getElementById('selector').addEventListener('click', fix_f);
 
 document.getElementById('plus').addEventListener('click', function(){
 	var is_exists=false;
-
+	if(empty_spisok)is_exists=false;
+	else{
 	for(var i=0;i<document.getElementById('selector').size;i++){
 		if(document.getElementById('cur_vm').value==document.getElementById('selector').item(i).value){
 			is_exists=true;
 		}
 	}
-
+	}
 	if(is_exists==false && document.getElementById('cur_vm').value!=''){
     location.href="http://localhost:5000/add_vm_to_spisok/"+document.getElementById('cur_vm').value;
 	}
