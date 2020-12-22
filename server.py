@@ -29,11 +29,7 @@ try:
                     remove_folder(env['TEMP']+'\\'+i)
                     print('Removed!')
                 except:
-                    print('Error!')
-    
-    if is_builded==True:
-        clear_temp()
-    
+                    print('Error!')    
     vm_mas=[]
     try:
         if check_exists('vm_list.txt',check_exists_param)==True:
@@ -539,6 +535,7 @@ try:
             alter_run(['taskkill','/f','/im','Python.exe'])
         else:
             alter_run(['taskkill','/f','/im','Client.exe'])
+            clear_temp()
             alter_run(['taskkill','/f','/im','Qemulator.exe'])
         return render('loading.html')
 
@@ -555,7 +552,7 @@ try:
         try:
             app.run(debug=False)
         except:
-            msg.showerror('Error with start server!','Maybe your computer\'s name has non English symbols?\nFor example, Russian symbols.')
+            msgbox.showerror('Error with start server!','Maybe your computer\'s name has non English symbols?\nFor example, Russian symbols.')
 except KeyboardInterrupt:
     print('Ctrl+C Pressed, quiting...')
 except:
