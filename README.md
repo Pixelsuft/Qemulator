@@ -33,4 +33,6 @@ explorer .
 ![Screenshot](https://github.com/Pixelsuft/Qemulator/blob/main/screenshots/screenshot1.png?raw=true)<br />
 ![Screenshot](https://github.com/Pixelsuft/Qemulator/blob/main/screenshots/screenshot2.png?raw=true)
 # Bugs
-I'm fixed all bugs can i found! ☺
+I'm fixed all bugs can I found! ☺ <br />
+Edit: <br />
+Don't use / or \ in other params
