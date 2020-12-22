@@ -21,11 +21,8 @@ Edit first string of file ```server.py```: is_builded=True <br />
 Then: 
 ```
 pyinstaller server.py -F -w -i icon.ico --add-data "src;src" --add-data "static;static"
-copy Qemulator.exe dist\Client.exe
-copy *.bin dist\*.bin
-copy *.txt dist\*.txt
-cd dist
-move server.exe Qemulator.exe
+move Qemulator.exe Client.exe
+move dist\server.exe Qemulator.exe
 explorer .
 ```
 # Screenshots
