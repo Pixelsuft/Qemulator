@@ -17,8 +17,23 @@ try:
     #from tkinter import filedialog
     #from tkinter import Tk
     from easygui import fileopenbox as askopenfilename
+    from os import listdir as scan_dir
+    from shutil import rmtree as remove_folder
     cur_vm_before_start=''
-
+    
+    def clear_temp():
+        for i in scan_dir(env['TEMP']):
+            if i[:4]=='_MEI':
+                print('Trying to del temp folder '+i)
+                try:
+                    remove_folder(env['TEMP']+'\\'+i)
+                    print('Removed!')
+                except:
+                    print('Error!')
+    
+    if is_builded==True:
+        clear_temp()
+    
     vm_mas=[]
     try:
         if check_exists('vm_list.txt',check_exists_param)==True:
