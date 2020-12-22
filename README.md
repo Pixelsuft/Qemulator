@@ -33,4 +33,4 @@ explorer .
 ![Screenshot](https://github.com/Pixelsuft/Qemulator/blob/main/screenshots/screenshot1.png?raw=true)<br />
 ![Screenshot](https://github.com/Pixelsuft/Qemulator/blob/main/screenshots/screenshot2.png?raw=true)
 # Bugs
-If you want to don't have bugs, you must have more than 1 virtual machine in list
+I'm fixed all bugs can i fonud! ☺
