@@ -3,15 +3,15 @@
     version: 1,
     machine: "pc",
     memory_size: 192,
-    bios: "bios.bin",
-    drive0: { file: "win2k_v2/blk.txt", device: "ide" },
+    bios: "https://bellard.org/jslinux/bios.bin",
+    drive0: { file: "https://bellard.org/jslinux/win2k_v2/blk.txt", device: "ide" },
     eth0: { driver: "user" },
 
     display0: {
        device: "vga",
        width: 640,
        height: 480,
-       vga_bios: "vgabios.bin",
+       vga_bios: "https://bellard.org/jslinux/vgabios.bin",
     },
 
     input_device: "ps2",
