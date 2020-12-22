@@ -20,7 +20,7 @@ pip install pyinstaller
 Edit first string of file ```server.py```: is_builded=True <br />
 Then: 
 ```
-pyinstaller server.py -w -i icon.ico --add-data "src;src" --add-data "static;static"
+pyinstaller server.py -F -w -i icon.ico --add-data "src;src" --add-data "static;static"
 copy Qemulator.exe dist\server\Client.exe
 copy *.bin dist\server\*.bin
 copy *.txt dist\server\*.txt
