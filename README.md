@@ -5,7 +5,7 @@ Internet Explorer >= 10 <br />
 (Maybe Windows 10 only)
 # Installation for Windows
 Installing For Windows: <br />
-1)Download [Setup](https://github.com/Pixelsuft/Qemulator/releases/download/v1.3/Qemulator_setup.exe) or [Archive](https://github.com/Pixelsuft/Qemulator/releases/download/v1.3/Qemulator.rar)<br />
+1)Download [Setup](https://github.com/Pixelsuft/Qemulator/releases/download/v1.3/Qemulator_setup.exe) or [Archive](https://github.com/Pixelsuft/Qemulator/releases/download/v1.3/Qemulator.rar) or [nuitka build](https://github.com/Pixelsuft/Qemulator/releases/download/v1.3-nuitka/Qemulator.rar) (Recommended)<br />
 2)Install or unpack it to QEMU dir<br />
 (You also can install/unpack to other dir, if QEMU Folder in PATH)
 # Install Python Libs
